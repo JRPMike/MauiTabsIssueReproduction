@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TabCrashReproduction.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TabCrashReproduction"
+    xmlns:aPages="clr-namespace:TabCrashReproduction.Pages.A"
+    xmlns:bPages="clr-namespace:TabCrashReproduction.Pages.B"
+    Title="TabCrashReproduction">
+
+  <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+  <MenuItem Text="Go to A" Command="{Binding GoToACommand}"  />
+
+
+
+  <TabBar Route="A" x:Name="ATabbar" >
+    <ShellContent
+             Title="1" 
+             ContentTemplate="{DataTemplate aPages:NewPage1}"
+             Route="A1"/>
+    <ShellContent
+             Title="2" 
+             ContentTemplate="{DataTemplate aPages:NewPage2}"
+             Route="A2" />
+    <ShellContent
+             Title="3" 
+             ContentTemplate="{DataTemplate aPages:NewPage3}"
+             Route="A3" />
+    <ShellContent
+             Title="4" 
+             ContentTemplate="{DataTemplate aPages:NewPage4}"
+             Route="A4" />
+    <ShellContent
+             Title="5" 
+             ContentTemplate="{DataTemplate aPages:NewPage5}"
+             Route="A5" />
+    <ShellContent
+             Title="6" 
+             ContentTemplate="{DataTemplate aPages:NewPage6}"
+             Route="A6" />
+    <ShellContent
+             Title="7" 
+             ContentTemplate="{DataTemplate aPages:NewPage7}"
+             Route="A7" />
+
+  </TabBar>
+
+  <TabBar Route="B">
+    <ShellContent
+          Title="8" 
+          ContentTemplate="{DataTemplate bPages:NewPage8}"
+          Route="B8"   />
+    <ShellContent
+             Title="9" 
+             ContentTemplate="{DataTemplate bPages:NewPage9}"
+             Route="B9" />
+   
+  </TabBar>
+</Shell>

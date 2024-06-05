@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TabCrashReproduction/bin/Debug/net8.0-android/com.companyname.tabcrashreproduction.apk
+*.apk
+*.idsig
+/TabCrashReproduction/bin/Debug
+/TabCrashReproduction/obj
+/.vs
